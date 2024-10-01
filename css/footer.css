@@ -1,9 +1,12 @@
 /* Styling til footeren */
 .site-footer {
-    background-color: #424547; /* Grå baggrund */
-    padding: 20px;
+    background-color: #000; 
+    padding: 40px 20px; /* Tykkere footer ved at øge padding */
     text-align: center;
     border-top: 2px solid #eaeaea; /* En let kant på toppen af footeren */
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-content {
@@ -15,12 +18,12 @@
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* Mere margin for bedre spacing */
 }
 
 .footer-links a {
     text-decoration: none;
-    color: #BC012C; /* Rød farve */
+    color: #BC012C; 
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -31,5 +34,19 @@
 
 .footer-copy p {
     color: #BC012C; /* Rød tekst */
-    font-size: 14px;
+    font-size: 16px; /* Større font for bedre synlighed */
+}
+
+/* Gør footeren sticky, så den altid vises i bunden */
+html, body {
+    height: 100%; /* Sørg for, at hele siden bruger 100% af højden */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-footer {
+    margin-top: auto; /* Footeren skubbes ned til bunden, når der er lidt indhold */
 }

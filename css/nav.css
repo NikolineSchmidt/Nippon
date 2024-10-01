@@ -18,9 +18,15 @@
     align-items: center;
     padding: 15px 20px;
     height: 80px; /* Højden på den øverste linje */
+    position: relative; /* For at kunne bruge absolute positioning */
 }
 
 /* Logo i navbar */
+.navbar-logo {
+    position: absolute;
+    left: 20px; /* Placerer logoet til venstre */
+}
+
 .navbar-logo img {
     max-height: 60px; /* Størrelsen på logoet */
 }
@@ -29,6 +35,8 @@
 .navbar-search {
     display: flex;
     align-items: center;
+    margin: 0 auto; /* Centrerer søgefeltet */
+    position: relative; /* Til at holde søgefeltet centreret */
 }
 
 .navbar-search input {
@@ -52,13 +60,26 @@
 }
 
 .navbar-search button:hover {
-    background-color: #424547;
+    background-color: #000;
     color: #fff;
 }
 
 /* Ikoner (Log ind, kurv) */
+.navbar-icons {
+    position: absolute;
+    right: 20px; /* Placerer ikonerne til højre */
+}
+
 .navbar-icons a {
-    margin-left: 20px;
+    text-decoration: none;
+    color: #fff; /* Farve til teksten */
+    font-weight: bold;
+    margin-left: 20px; /* Lidt afstand mellem elementerne */
+    transition: color 0.3s ease;
+}
+
+.navbar-icons a:hover {
+    color: #000; /* Skift farve ved hover */
 }
 
 .navbar-icons img {
@@ -96,6 +117,5 @@
 }
 
 .navbar-menu a:hover {
-    color: #424547;
+    color: #000;
 }
-
