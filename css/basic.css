@@ -1,0 +1,21 @@
+/* Sætter box-sizing til alle elementer */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Styling af body-elementet */
+  body {
+    margin: 0px;
+    background-color: #f0f0f0;
+    font-family: "helvetica", sans-serif;
+    padding: 0;
+  }
+  
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }

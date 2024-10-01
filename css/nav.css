@@ -1,0 +1,101 @@
+/* Nulstiller standard indstillinger */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling til navbar */
+.navbar {
+    background-color: #BC012C;
+    border-bottom: 2px solid #eaeaea;
+}
+
+/* Øverste del af navbar (logo, søgefelt, login/kurv) */
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    height: 80px; /* Højden på den øverste linje */
+}
+
+/* Logo i navbar */
+.navbar-logo img {
+    max-height: 60px; /* Størrelsen på logoet */
+}
+
+/* Styling til søgefelt */
+.navbar-search {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-search input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.navbar-search button {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: #fff;
+    color: #424547;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-search button:hover {
+    background-color: #424547;
+    color: #fff;
+}
+
+/* Ikoner (Log ind, kurv) */
+.navbar-icons a {
+    margin-left: 20px;
+}
+
+.navbar-icons img {
+    max-height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Nederste del af navbar (menu links) */
+.navbar-bottom {
+    background-color: #BC012C;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0; /* Mellemrum omkring menuen */
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-menu li {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color: #424547;
+}
+
