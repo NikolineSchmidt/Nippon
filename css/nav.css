@@ -8,7 +8,7 @@
 /* Styling til navbar */
 .navbar {
     background-color: #BC012C;
-    border-bottom: 2px solid #eaeaea;
+    /* border-bottom: 2px solid #eaeaea; */
 }
 
 /* Øverste del af navbar (logo, søgefelt, login/kurv) */
