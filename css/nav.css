@@ -125,13 +125,14 @@
 .submenu {
     list-style: none;
     position: absolute;
-    top: 30px; /* Justér denne værdi til højden af din navbar */
+    top: 100%; /* Justér for at placere submenuen under hovedmenuen */
     left: 50%; /* Flyt submenuens venstre kant til midten af forælderen */
-    transform: translateX(-50%); /* Flyt submenuen tilbage med halvdelen af dens bredde */
+    transform: translateX(-50%); /* Centrer submenuen */
     background-color: #BC012C;
     display: none; /* Skjul submenuen som standard */
     padding: 10px 0;
     z-index: 10;
+    transition: all 0.3s ease; /* Giv submenuen en glidende overgang */
 }
 
 .submenu li {
@@ -147,7 +148,11 @@
     color: #000;
 }
 
-/* Gør submenuen synlig ved hover */
+/* Hover-effekt for at holde submenuen synlig */
 .navbar-menu li:hover .submenu {
-    display: block; /* Viser submenuen, når der hoveres over hovedmenupunktet */
+    display: block; /* Gør submenuen synlig ved hover over hovedmenu */
+}
+
+.submenu:hover {
+    display: block; /* Beholder submenuen synlig ved hover over submenuen */
 }
