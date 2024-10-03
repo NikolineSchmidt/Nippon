@@ -1,0 +1,18 @@
+button.tilbage {
+    color: white;
+    padding:10px 20px;
+    margin:20px 400px;
+    color: black;
+}
+
+.bestilling {
+    display: flex;
+    justify-content: center;
+    color:white ;
+    margin: 30px;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+}
