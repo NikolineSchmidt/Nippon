@@ -1,0 +1,14 @@
+.image-container {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .image-container img {
+    width: 200px; 
+    height: 150px; 
+    object-fit: cover; 
+    
+
+  }
+
+  
