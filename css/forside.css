@@ -1,0 +1,63 @@
+/* Hero sektion */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Gør baggrunden mørkere for at fremhæve teksten */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Bæredygtighed sektion */
+.sustainability {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    gap: 20px;
+}
+
+.sustainability-text {
+    flex: 1;
+}
+
+.sustainability-image {
+    width: 50%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.sustainability h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.sustainability p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
