@@ -50,7 +50,7 @@
     font-size: 16px;
     margin-left: 10px;
     background-color: #fff;
-    color: #424547;
+    color: #000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -58,8 +58,8 @@
 }
 
 .navbar-search button:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
 
 /* Ikoner (Log ind, kurv) */
@@ -70,14 +70,14 @@
 
 .navbar-icons a {
     text-decoration: none;
-    color: #fff; /* Farve til teksten */
+    color: #000; /* Farve til teksten */
     font-weight: bold;
     margin-left: 20px; /* Lidt afstand mellem elementerne */
     transition: color 0.3s ease;
 }
 
 .navbar-icons a:hover {
-    color: #000; /* Skift farve ved hover */
+    color: #fff; /* Skift farve ved hover */
 }
 
 .navbar-icons img {
@@ -113,12 +113,12 @@
 /* Hovedmenu links */
 .navbar-menu a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     transition: color 0.3s ease;
 }
 
 .navbar-menu a:hover {
-    color: #000;
+    color: #fff;
 }
 
 /* Styling af submenu */
@@ -140,12 +140,12 @@
 }
 
 .submenu li a {
-    color: #fff;
+    color: #000;
     font-size: 16px;
 }
 
 .submenu li a:hover {
-    color: #000;
+    color: #fff;
 }
 
 /* Hover-effekt for at holde submenuen synlig */

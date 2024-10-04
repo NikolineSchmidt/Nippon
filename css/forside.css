@@ -7,6 +7,50 @@
     object-fit: contain; /* Sikrer, at billedet bevarer proportionerne */
 }
 
+.featured-meals {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.forside-image {
+    width: 40%; /* Bevarer størrelsen på billedet */
+    height: auto;
+    margin: 20px 0 20px 20px; /* Bevarer luft omkring billedet */
+    object-fit: contain;
+}
+
+.featured-text {
+    max-width: 50%; /* Begrænser bredden af tekstboksen */
+    margin-left: 90px; /* Øger afstanden fra billedet for at flytte teksten mere til højre */
+    text-align: center; /* Sørger for teksten er venstrejusteret */
+}
+
+.featured-text h1 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.featured-text p {
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
 
 /* Vission & Mission sektion */
 .vissionogmission {
@@ -15,7 +59,7 @@
     padding: 40px 20px;
     max-width: 1100px;
     margin: 0 auto 60px auto;
-    clear: both; /* Sørger for, at dette afsnit starter under varevognsbilledet */
+    clear: both; 
 }
 
 /* Flexbox for billederne */
@@ -33,9 +77,9 @@
 }
 
 .vissionogmission-image {
-    width: 48%; /* Gør billederne lidt større */
+    width: 48%; 
     height: auto;
-    max-height: 300px; /* Begrænser højden */
+    max-height: 300px; 
     object-fit: contain;
 }
 
@@ -86,42 +130,4 @@
     display: block;
 }
 
-.featured-meals {
-    display: flex; /* Brug flexbox til at placere billede og tekst side om side */
-    align-items: center; /* Centrerer indholdet vertikalt */
-    padding: 20px; /* Giver luft omkring sektionen */
-}
 
-.featured-meals .forside-image {
-    margin-right: 20px; /* Giver lidt luft mellem billedet og teksten */
-    width: 40%; /* Juster billedets størrelse efter behov */
-    height: auto;
-}
-
-.featured-text {
-    max-width: 60%; /* Begrænser bredden af tekstboksen */
-}
-
-.featured-text h1 {
-    font-size: 2em; /* Juster størrelse på overskriften */
-    color: #fff; /* Ændre farven på teksten */
-}
-
-.featured-text p {
-    font-size: 1.2em; /* Juster størrelse på teksten */
-    color: #fff; /* Lidt lysere farve for teksten */
-}
-
-.btn {
-    display: inline-block; /* Gør knappen til en blok */
-    padding: 10px 20px; /* Indre margin til knappen */
-    background-color: #000; /* Baggrundsfarve */
-    color: white; /* Tekstfarve */
-    text-decoration: none; /* Ingen understregning */
-    border-radius: 5px; /* Rundede kanter */
-    margin-top: 10px; /* Luft over knappen */
-}
-
-.btn:hover {
-    background-color: #45a049; /* Mørkere farve ved hover */
-}
