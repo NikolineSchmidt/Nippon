@@ -5,6 +5,7 @@
     margin: 20px 0 20px 20px; /* Giver luft omkring billedet, tilføjer luft til venstre */
     float: left; /* Placerer billedet til venstre */
     object-fit: contain; /* Sikrer, at billedet bevarer proportionerne */
+    border-radius: 15px;
 }
 
 .featured-meals {
@@ -13,12 +14,6 @@
     padding: 20px;
 }
 
-.forside-image {
-    width: 40%; /* Bevarer størrelsen på billedet */
-    height: auto;
-    margin: 20px 0 20px 20px; /* Bevarer luft omkring billedet */
-    object-fit: contain;
-}
 
 .featured-text {
     max-width: 50%; /* Begrænser bredden af tekstboksen */
@@ -83,9 +78,9 @@
     object-fit: contain;
 }
 
-.vissionogmission h1 {
+.vissionogmission h2 {
     font-size: 2.2em;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #fff;
 }
 
@@ -109,7 +104,7 @@
     color: #fff;
 }
 
-.sustainability h2 {
+.sustainability h3 {
     font-size: 2em;
     margin-bottom: 15px;
     color: #fff;
@@ -122,12 +117,13 @@
 }
 
 .sustainability-image {
-    width: 100%;
+    width: 50%;
     height: auto;
     max-width: 1000px;
     object-fit: contain;
     margin: 20px auto;
     display: block;
+    border-radius: 15px;
 }
 
 
