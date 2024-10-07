@@ -1,46 +1,51 @@
+.image-row {
+  display: flex; /* Gør det muligt at placere elementer i en fleksibel række */
+  justify-content: space-around; /* Fordeler billederne jævnt i rækken */
+  margin: 20px 0; /* Tilføjer margin over og under billedrækken */
+}
+
 .image-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 200px; /* Adjust as needed */
-  margin: 10px;
-  text-align: center; /* Center the text under each image */
+  display: flex; /* Gør det muligt at placere indholdet i en fleksibel kolonne */
+  flex-direction: column; /* Arrangerer indholdet i en kolonne */
+  align-items: center; /* Centrerer indholdet horisontalt */
+  width: 350px; /* Øger bredden på hver måltidskasse */
+  margin: 10px; /* Margin omkring hver container */
+  text-align: center; /* Centrerer teksten under hvert billede */
+  height: 400px; /* Sætter en fast højde for at sikre ensartethed */
+  justify-content: space-between; /* Fordeler indholdet jævnt i containeren */
 }
 
 .image-container img {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
-}
-
-.image-row {
-  display: flex;
-  justify-content: space-around; /* Spreads the images evenly */
-  margin: 20px 0;
+  width: 100%; /* Gør billederne responsive og tilpasser sig containerens bredde */
+  height: 250px; /* Øger højden på billederne */
+  object-fit: cover; /* Sikrer, at billedet dækker hele containeren uden at ændre aspektforholdet */
+  border-radius: 10px; /* Rundede kanter på billederne */
 }
 
 .image-container h3 {
-  margin: 10px 0 5px 0;
-  font-size: 18px;
+  margin: 10px 0 5px 0; /* Margin omkring overskriften */
+  font-size: 20px; /* Størrelse på overskriften */
 }
 
 .image-container p {
-  font-size: 14px;
-  color: black; /* Optional: adjust text color */
+  font-size: 16px; /* Størrelse på beskrivelsen */
+  color: black; /* Farve på teksten */
+  margin-bottom: 20px; /* Margin under beskrivelsen for ekstra plads til knappen */
 }
 
+/* Justering af knapperne for at sikre, at de er på linje */
 .cta-button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 10px;
-  background-color: black;  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 14px;
+  display: flex; /* Gør knappen til et fleksibelt element */
+  justify-content: center; /* Centrerer indholdet i knappen */
+  align-items: center; /* Centrerer indholdet vertikalt */
+  padding: 10px 20px; /* Indvendig afstand omkring knappen */
+  background-color: black; /* Baggrundsfarve på knappen */
+  color: white; /* Tekstfarve på knappen */
+  text-decoration: none; /* Fjerner understregning fra links */
+  border-radius: 5px; /* Rundede kanter på knappen */
+  font-size: 16px; /* Størrelse på teksten på knappen */
 }
 
 .cta-button:hover {
-  background-color: black; /* Hover effect */
+  background-color: #45a049; /* Ændrer baggrundsfarven, når musen er over knappen */
 }
-
-  

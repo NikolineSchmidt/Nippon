@@ -1,15 +1,18 @@
 main {
     display: flex;
-    flex-direction: row; /* Stack items vertically */
-    align-items: center; /* Center the items horizontally */
-    gap: 20px; /* Add space between each section */
+    flex-direction: column; /* Stabel elementer vertikalt */
+    align-items: center; /* Center elementerne horisontalt */
+    gap: 20px; /* Tilføj plads mellem hver sektion */
 }
 
 section {
-    width: 100%; /* Ensure each section takes up the full width of the parent container */
-    max-width: 600px; /* Optionally, set a max width for better control */
+    width: 100%; /* Sørg for at hver sektion tager hele bredden af forældre container */
+    max-width: 600px; /* Sæt en maks. bredde for bedre kontrol */
     padding: 20px;
     margin: 10px;
+    border: 1px solid #000; /* Tilføj en let kant rundt om sektionerne */
+    border-radius: 8px; /* Rundede hjørner */
+    background-color: #BC012C; /* Lys baggrundsfarve */
 }
 
 h2 {
@@ -32,27 +35,35 @@ aside button {
     margin-left: 10px;
 }
 
-/* Flex container for checkout and total sum */
+/* Flex container for checkout og total sum */
 .checkout-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* Stabel checkout-sektioner vertikalt */
     align-items: center;
-    width: 100%; /* Make checkout section full width */
-    max-width: 600px; /* Set a max width for consistency */
+    width: 100%; /* Gør checkout-sektion fuld bredde */
+    max-width: 600px; /* Sæt en maks. bredde for ensartethed */
     margin-top: 20px;
-    
 }
 
-.checkout-container section {
-    width: 100%; /* Each section takes half the width */
-    box-sizing: border-box;
-}
-
-/* Make the food images responsive */
+/* Gør madbilleder responsive */
 .food-image {
-    max-width: 100%; /* Ensure it doesn't exceed the width of its container */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 200px; /* Limit the maximum height */
-    border-radius: 8px; /* Optional: Add rounded corners */
-    margin-bottom: 15px; /* Add spacing below the image */
+    max-width: 100%; /* Sørg for, at det ikke overskrider bredden af sin container */
+    height: auto; /* Bevar aspektforholdet */
+    max-height: 200px; /* Begræns den maksimale højde */
+    border-radius: 8px; /* Tilføj rundede hjørner */
+    margin-bottom: 15px; /* Tilføj afstand nedenfor billedet */
+}
+
+/* Stilarter for knapper */
+button {
+    padding: 10px 15px; /* Indvendig afstand omkring knappen */
+    border: none; /* Ingen kant på knappen */
+    background-color: #4CAF50; /* Grøn baggrundsfarve */
+    color: white; /* Hvid tekstfarve */
+    border-radius: 5px; /* Rundede kanter */
+    cursor: pointer; /* Ændrer cursor til pointer ved hover */
+}
+
+button:hover {
+    background-color: #45a049; /* Mørkere grøn ved hover */
 }

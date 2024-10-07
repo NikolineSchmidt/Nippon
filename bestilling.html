@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,110 +12,93 @@
 </head>
 <body>
     <header>
-        <h1>Nippon</h1>
+        <h1>Bestilling af måltidskasser</h1>
     </header>
     <main>
-        
         <section>
-            <h2>Gyoza</h2>
+            <h2>Vegetarisk Kasse</h2>
             <aside>
-                <img src="img/gyoza.webp" alt="gyoza" class="food-image">
+                <img src="img/vegetarkasse.webp" alt="Vegetarisk Kasse" class="food-image">
             </aside>
             <aside>
-                <input type="number" name="gyoza" id="gyoza" value="0" disabled>
+                <label for="vegetarisk-personer">Antal personer:</label>
+                <input type="number" id="vegetarisk-personer" min="1" value="1" onchange="calculatePrice('vegetarisk');">
             </aside>
             <aside>
-                <label for="gyoza-price">Price per unit:</label>
-                <input type="number" id="gyoza-price" value="10" disabled>
+                <label for="vegetarisk-retter">Antal retter:</label>
+                <input type="number" id="vegetarisk-retter" min="1" value="1" onchange="calculatePrice('vegetarisk');">
             </aside>
             <aside>
-                <label for="gyoza-total">Total price:</label>
-                <input type="number" id="gyoza-total" value="0" disabled>
+                <label for="vegetarisk-total">Total pris:</label>
+                <input type="number" id="vegetarisk-total" value="0" disabled>
             </aside>
             <aside>
-                <label for="gyoza-quantity">Enter quantity:</label>
-                <input type="number" id="gyoza-quantity" min="1" value="1">
+                <button onclick="addToCart('vegetarisk');">Tilføj til Kurv</button>
             </aside>
-            <aside>
-                <button onclick="addCustomQuantity('gyoza');">Vælg antal Dage</button>
-            </aside>
-            <aside><button onclick="removeFromCart('gyoza');">Fjern fra Kurv</button></aside>
-            <aside><button onclick="resetCart('gyoza');">Nustil Kurv</button></aside>
         </section>
-        <!-- Americano Section -->
+
         <section>
-            <h2>Japansk plantefarsbowl</h2>
+            <h2>Familiefavoritter Kasse</h2>
             <aside>
-                <img src="img/hellofresh.webp" alt="Japansk plantefarsbowl" class="food-image">
+                <img src="img/familiekassen.webp" alt="Familiefavoritter Kasse" class="food-image">
             </aside>
             <aside>
-                <input type="number" name="japansk" id="japansk" value="0" disabled>
+                <label for="familiefavoritter-personer">Antal personer:</label>
+                <input type="number" id="familiefavoritter-personer" min="1" value="1" onchange="calculatePrice('familiefavoritter');">
             </aside>
             <aside>
-                <label for="japansk-price">Price per unit:</label>
-                <input type="number" id="japansk-price" value="10" disabled>
+                <label for="familiefavoritter-retter">Antal retter:</label>
+                <input type="number" id="familiefavoritter-retter" min="1" value="1" onchange="calculatePrice('familiefavoritter');">
             </aside>
             <aside>
-                <label for="japansk-total">Total price:</label>
-                <input type="number" id="japansk-total" value="0" disabled>
+                <label for="familiefavoritter-total">Total pris:</label>
+                <input type="number" id="familiefavoritter-total" value="0" disabled>
             </aside>
             <aside>
-                <label for="japansk-quantity">Enter quantity:</label>
-                <input type="number" id="japansk-quantity" min="1" value="1">
+                <button onclick="addToCart('familiefavoritter');">Tilføj til Kurv</button>
             </aside>
-            <aside>
-                <button onclick="addCustomQuantity('japansk');">Vælg antal Dage</button>
-            </aside>
-            <aside><button onclick="removeFromCart('japansk');">Fjern fra Kurv</button></aside>
-            <aside><button onclick="resetCart('japansk');">Nustil Kurv</button></aside>
         </section>
-        <!-- Espresso Section -->
+
         <section>
-            <section>
-                <h2>Beef Ramen</h2>
-                <aside>
-                    <img src="img/ramen.webp" alt="Beef Ramen" class="food-image">
-                </aside>
-                <aside>
-                    <input type="number" name="ramen" id="ramen" value="0" disabled>
-                </aside>
-                <aside>
-                    <label for="ramen-price">Price per unit:</label>
-                    <input type="number" id="ramen-price" value="10" disabled>
-                </aside>
-                <aside>
-                    <label for="ramen-total">Total price:</label>
-                    <input type="number" id="ramen-total" value="0" disabled>
-                </aside>
-                <aside>
-                    <label for="ramen-quantity">Enter quantity:</label>
-                    <input type="number" id="ramen-quantity" min="1" value="1">
-                </aside>
-                <aside>
-                    <button onclick="addCustomQuantity('ramen');">Vælg antal Dage</button>
-                </aside>
-                <aside><button onclick="removeFromCart('ramen');">Fjern fra Kurv</button></aside>
-                <aside><button onclick="resetCart('ramen');">Nustil Kurv</button></aside>
-            </section>
-      
+            <h2>Hurtig Kasse</h2>
+            <aside>
+                <img src="img/hurtigkasse.webp" alt="Hurtig Kasse" class="food-image">
+            </aside>
+            <aside>
+                <label for="hurtig-personer">Antal personer:</label>
+                <input type="number" id="hurtig-personer" min="1" value="1" onchange="calculatePrice('hurtig');">
+            </aside>
+            <aside>
+                <label for="hurtig-retter">Antal retter:</label>
+                <input type="number" id="hurtig-retter" min="1" value="1" onchange="calculatePrice('hurtig');">
+            </aside>
+            <aside>
+                <label for="hurtig-total">Total pris:</label>
+                <input type="number" id="hurtig-total" value="0" disabled>
+            </aside>
+            <aside>
+                <button onclick="addToCart('hurtig');">Tilføj til Kurv</button>
+            </aside>
+        </section>
+
         <div class="checkout-container">
-        <section>   
-            <h2>Checkout sum:</h2>
+            <section>
+                <h2>Prisoversigt:</h2>
                 <aside>
                     <label for="totalSumCart">Total:</label>
                     <input type="number" name="totalSum" id="totalSum" value="0" disabled>
                 </aside>
-        </section>
-        <!-- Add this to index.html, near your shopping cart summary -->
-        <section>
-            <h2>Checkout</h2>
+            </section>
+            <section>
+                <h2>Checkout</h2>
+                <aside>
+                    <button id="checkoutButton">Gå til Checkout</button>
+                </aside>
+            </section>
             <aside>
-                <!-- Checkout button -->
-                <button id="checkoutButton">Go to Checkout</button>
-
+                <button onclick="resetCart();">Nulstil Kurv</button>
             </aside>
-        </section>
-    </div>
+        </div>
     </main>
 </body>
 </html>

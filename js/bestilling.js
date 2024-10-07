@@ -2,94 +2,66 @@
 
 // Opret et objekt til at holde styr på bestillingen
 let cart = {
-    gyoza: {
+    vegetarisk: {
         quantity: 0,
         price: 10,
         total: 0
     },
-    japansk: {
+    familiefavoritter: {
         quantity: 0,
         price: 12,
         total: 0
     },
-    ramen: {
+    hurtig: {
         quantity: 0,
         price: 15,
         total: 0
     }
-   
 };
 
-// Funktion til at gemme kurven i localStorage
-function saveCartToLocalStorage() {
-    localStorage.setItem('cart', JSON.stringify(cart));
-}
+// Funktion til at beregne prisen baseret på antal personer og retter
+function calculatePrice(product) {
+    const personer = document.getElementById(`${product}-personer`).value;
+    const retter = document.getElementById(`${product}-retter`).value;
 
-// Funktion til at hente kurven fra localStorage
-function loadCartFromLocalStorage() {
-    const storedCart = localStorage.getItem('cart');
-    if (storedCart) {
-        cart = JSON.parse(storedCart);
-        updateUIFromCart();  // Opdaterer UI med de hentede data
-    }
-}
+    const pricePerUnit = cart[product].price; // Fastsæt prisen pr. enhed
+    const totalPrice = pricePerUnit * personer * retter; // Beregn total pris
 
-// Opdater UI fra cart (f.eks. ved sideindlæsning)
-function updateUIFromCart() {
-    for (const product in cart) {
-        document.getElementById(product).value = cart[product].quantity;
-        document.getElementById(product + "-total").value = cart[product].total;
-    }
-    totalPrice();
+    document.getElementById(`${product}-total`).value = totalPrice; // Opdater totalpris feltet
 }
 
 // Funktion til at tilføje til kurven
 function addToCart(product) {
-    cart[product].quantity += 1;
-    updateTotalPrice(product);
-    saveCartToLocalStorage();  // Gem efter ændringer
+    const total = parseFloat(document.getElementById(`${product}-total`).value);
+    cart[product].total += total; // Tilføj totalen til kurven
+    cart[product].quantity += 1; // Øg kvantiteten
+    updateTotalPrice(product); // Opdater totalprisen
+    saveCartToLocalStorage(); // Gem i local storage
 }
 
-// Funktion til at fjerne fra kurven
-function removeFromCart(product) {
-    if (cart[product].quantity > 0) {
-        cart[product].quantity -= 1;
-        updateTotalPrice(product);
-        saveCartToLocalStorage();  // Gem efter ændringer
+// Funktion til at nulstille kurven
+function resetCart() {
+    for (const product in cart) {
+        cart[product].quantity = 0;
+        cart[product].total = 0;
+        document.getElementById(`${product}-total`).value = 0; // Nulstil totalpris feltet
+        document.getElementById(`${product}-personer`).value = 1; // Nulstil antal personer
+        document.getElementById(`${product}-retter`).value = 1; // Nulstil antal retter
     }
+    totalPrice(); // Opdater den samlede pris
+    saveCartToLocalStorage(); // Gem i local storage
 }
 
-// Funktion til at øge kvantiteten af en bestemt vare
-function increaseQuantity(product, amount) {
-    cart[product].quantity += amount;
-    updateTotalPrice(product);
-    saveCartToLocalStorage();  // Gem efter ændringer
-}
-
-// Funktion til at nulstille kurven for et bestemt produkt
-function resetCart(product) {
-    cart[product].quantity = 0;
-    updateTotalPrice(product);
-    saveCartToLocalStorage();  // Gem efter ændringer
-}
-
-// Opdaterer totalprisen for et produkt
+// Opdaterer totalprisen for hele kurven
 function updateTotalPrice(product) {
-    cart[product].total = cart[product].quantity * cart[product].price;
-    
-    // Opdater input felter i HTML
-    document.getElementById(product).value = cart[product].quantity;
-    document.getElementById(product + "-total").value = cart[product].total;
-
-    // Opdater den samlede pris for hele kurven
-    totalPrice();
+    const totalSum = cart.vegetarisk.total + cart.familiefavoritter.total + cart.hurtig.total;
+    document.getElementById("totalSum").value = totalSum; // Opdater total sum
 }
 
 // Beregner den samlede pris for alle produkter i kurven
 function totalPrice() {
-    const totalSum = cart.gyoza.total + cart.japansk.total + cart.ramen.total;
-    document.getElementById("totalSum").value = totalSum;
-    console.log(cart); // Udskriv objektet til konsollen for at se kurvens indhold
+    const totalSum = cart.vegetarisk.total + cart.familiefavoritter.total + cart.hurtig.total;
+    document.getElementById("totalSum").value = totalSum; // Opdater total sum
 }
 
 // Ved sideindlæsning, prøv at hente kurven fra localStorage
@@ -97,21 +69,4 @@ window.onload = function() {
     loadCartFromLocalStorage();
 };
 
-// This code should be added to the existing script.js file
-document.getElementById('checkoutButton').addEventListener('click', function() {
-    // Redirect the user to checkout.html
-    window.location.href = "checkout.html";
-});
-
-function addCustomQuantity(product) {
-    const quantityInput = document.getElementById(product + '-quantity').value;
-    const quantity = parseInt(quantityInput, 10);
-
-    if (!isNaN(quantity) && quantity > 0) {
-        cart[product].quantity += quantity;
-        updateTotalPrice(product); // Update the total price for that product
-        saveCartToLocalStorage();  // Save cart after changes
-    } else {
-        alert("Please enter a valid quantity.");
-    }
-}
+// Resten af din eksisterende JS kode...
