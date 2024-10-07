@@ -1,4 +1,4 @@
-
+/* Forside billede styling */
 .forside-image {
     width: 40%; /* Gør billedet mindre, så det passer til venstre side */
     height: auto;
@@ -8,26 +8,26 @@
     border-radius: 15px;
 }
 
-.featured-meals {
+/* Introduktion sektion */
+.intro-section {
     display: flex;
     align-items: center;
     padding: 20px;
 }
 
-
-.featured-text {
+.intro-text {
     max-width: 50%; /* Begrænser bredden af tekstboksen */
     margin-left: 90px; /* Øger afstanden fra billedet for at flytte teksten mere til højre */
     text-align: center; /* Sørger for teksten er venstrejusteret */
 }
 
-.featured-text h1 {
+.intro-text h1 {
     font-size: 2em;
     color: #fff;
     margin-bottom: 40px;
 }
 
-.featured-text p {
+.intro-text p {
     font-size: 1.2em;
     color: #fff;
     margin-bottom: 20px;
@@ -125,5 +125,3 @@
     display: block;
     border-radius: 15px;
 }
-
-
