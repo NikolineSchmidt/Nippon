@@ -1,0 +1,59 @@
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 3.8rem;
+    font-family: sans-serif;
+    color: #0e0e94;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/coffee-checkout-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+section h2 {
+    font-family: sans-serif;
+    font-size: 2.2rem;
+}
+
+section h3 {
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+
+thead tr th {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    color: darkblue;
+}
+
+tbody tr td {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 1.6rem;
+    padding: 3px 8px;
+}
+
+
+
+button#placeOrderButton {
+    height: 2.8rem;
+    width: 22rem;
+    background-color: #3cb371;
+    font-family: sans-serif;
+    font-size: 1.9rem;
+    color: ghostwhite;
+}

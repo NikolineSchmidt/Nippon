@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestilling af måltidskasser</title>
+    
+    <script src="js/bestilling.js" defer></script>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/bestilling.css">
+</head>
+<body>
+    <header>
+        <h1>Nippon</h1>
+    </header>
+    <main>
+        
+        <section>
+            <h2>Gyoza</h2>
+            <aside>
+                <img src="img/gyoza.webp" alt="gyoza" class="food-image">
+            </aside>
+            <aside>
+                <input type="number" name="gyoza" id="gyoza" value="0" disabled>
+            </aside>
+            <aside>
+                <label for="gyoza-price">Price per unit:</label>
+                <input type="number" id="gyoza-price" value="10" disabled>
+            </aside>
+            <aside>
+                <label for="gyoza-total">Total price:</label>
+                <input type="number" id="gyoza-total" value="0" disabled>
+            </aside>
+            <aside>
+                <label for="gyoza-quantity">Enter quantity:</label>
+                <input type="number" id="gyoza-quantity" min="1" value="1">
+            </aside>
+            <aside>
+                <button onclick="addCustomQuantity('gyoza');">Vælg antal Dage</button>
+            </aside>
+            <aside><button onclick="removeFromCart('gyoza');">Fjern fra Kurv</button></aside>
+            <aside><button onclick="resetCart('gyoza');">Nustil Kurv</button></aside>
+        </section>
+        <!-- Americano Section -->
+        <section>
+            <h2>Japansk plantefarsbowl</h2>
+            <aside>
+                <img src="img/hellofresh.webp" alt="Japansk plantefarsbowl" class="food-image">
+            </aside>
+            <aside>
+                <input type="number" name="japansk" id="japansk" value="0" disabled>
+            </aside>
+            <aside>
+                <label for="japansk-price">Price per unit:</label>
+                <input type="number" id="japansk-price" value="10" disabled>
+            </aside>
+            <aside>
+                <label for="japansk-total">Total price:</label>
+                <input type="number" id="japansk-total" value="0" disabled>
+            </aside>
+            <aside>
+                <label for="japansk-quantity">Enter quantity:</label>
+                <input type="number" id="japansk-quantity" min="1" value="1">
+            </aside>
+            <aside>
+                <button onclick="addCustomQuantity('japansk');">Vælg antal Dage</button>
+            </aside>
+            <aside><button onclick="removeFromCart('japansk');">Fjern fra Kurv</button></aside>
+            <aside><button onclick="resetCart('japansk');">Nustil Kurv</button></aside>
+        </section>
+        <!-- Espresso Section -->
+        <section>
+            <section>
+                <h2>Beef Ramen</h2>
+                <aside>
+                    <img src="img/ramen.webp" alt="Beef Ramen" class="food-image">
+                </aside>
+                <aside>
+                    <input type="number" name="ramen" id="ramen" value="0" disabled>
+                </aside>
+                <aside>
+                    <label for="ramen-price">Price per unit:</label>
+                    <input type="number" id="ramen-price" value="10" disabled>
+                </aside>
+                <aside>
+                    <label for="ramen-total">Total price:</label>
+                    <input type="number" id="ramen-total" value="0" disabled>
+                </aside>
+                <aside>
+                    <label for="ramen-quantity">Enter quantity:</label>
+                    <input type="number" id="ramen-quantity" min="1" value="1">
+                </aside>
+                <aside>
+                    <button onclick="addCustomQuantity('ramen');">Vælg antal Dage</button>
+                </aside>
+                <aside><button onclick="removeFromCart('ramen');">Fjern fra Kurv</button></aside>
+                <aside><button onclick="resetCart('ramen');">Nustil Kurv</button></aside>
+            </section>
+      
+        <div class="checkout-container">
+        <section>   
+            <h2>Checkout sum:</h2>
+                <aside>
+                    <label for="totalSumCart">Total:</label>
+                    <input type="number" name="totalSum" id="totalSum" value="0" disabled>
+                </aside>
+        </section>
+        <!-- Add this to index.html, near your shopping cart summary -->
+        <section>
+            <h2>Checkout</h2>
+            <aside>
+                <!-- Checkout button -->
+                <button id="checkoutButton">Go to Checkout</button>
+
+            </aside>
+        </section>
+    </div>
+    </main>
+</body>
+</html>

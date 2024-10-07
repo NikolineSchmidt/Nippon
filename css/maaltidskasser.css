@@ -1,14 +1,46 @@
 .image-container {
-    display: inline-block;
-    margin: 10px;
-  }
-  
-  .image-container img {
-    width: 200px; 
-    height: 150px; 
-    object-fit: cover; 
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px; /* Adjust as needed */
+  margin: 10px;
+  text-align: center; /* Center the text under each image */
+}
 
-  }
+.image-container img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-around; /* Spreads the images evenly */
+  margin: 20px 0;
+}
+
+.image-container h3 {
+  margin: 10px 0 5px 0;
+  font-size: 18px;
+}
+
+.image-container p {
+  font-size: 14px;
+  color: black; /* Optional: adjust text color */
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: black;  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.cta-button:hover {
+  background-color: black; /* Hover effect */
+}
 
   
