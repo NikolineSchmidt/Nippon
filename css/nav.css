@@ -8,7 +8,6 @@
 /* Styling til navbar */
 .navbar {
     background-color: #BC012C;
-    /* border-bottom: 2px solid #eaeaea; */
 }
 
 /* Øverste del af navbar (logo, søgefelt, login/kurv) */
@@ -70,14 +69,14 @@
 
 .navbar-icons a {
     text-decoration: none;
-    color: #000; /* Farve til teksten */
+    color: #000; 
     font-weight: bold;
     margin-left: 20px; /* Lidt afstand mellem elementerne */
     transition: color 0.3s ease;
 }
 
 .navbar-icons a:hover {
-    color: #fff; /* Skift farve ved hover */
+    color: #fff; 
 }
 
 .navbar-icons img {
@@ -129,7 +128,7 @@
     left: 50%; /* Flyt submenuens venstre kant til midten af forælderen */
     transform: translateX(-50%); /* Centrer submenuen */
     background-color: #BC012C;
-    display: none; /* Skjul submenuen som standard */
+    display: none; 
     padding: 10px 0;
     z-index: 10;
     transition: all 0.3s ease; /* Giv submenuen en glidende overgang */

@@ -1,105 +1,103 @@
 /* Styling for hele footer-sektionen */
 .footer {
-    display: flex;
-    justify-content: center; /* Centrerer kolonner vandret */
-    align-items: flex-start; /* Beholder indholdet på linje øverst */
-    flex-wrap: wrap; /* Tillader fleksible kolonner i flere rækker */
-    width: 100%;
-    height: auto; /* Tilpasser højden efter indholdet */
-    background-color: #000;
-    padding: 20px 0; /* Tilføjer lidt afstand i top og bund */
-  }
-  
-  
-  /* Styling for kolonnerne i footeren */
-  .footer .col {
-    flex: 1 1 190px; /* Gør kolonner fleksible, så de kan tilpasse sig */
-    max-width: 190px;
-    height: auto;
-    box-sizing: border-box;
-    padding: 0px 20px 20px 20px;
-    text-align: center; /* Centrerer tekst i kolonnerne */
-  }
-  
-  /* Styling for kolonneoverskrifter */
-  .footer .col h2 {
-    margin: 0;
-    padding: 0;
-    font-family: inherit;
-    font-size: 12px;
-    line-height: 17px;
-    padding: 20px 0px 5px 0px;
-    color: #BC012C;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.250em;
-  }
-  
-  /* Styling for lister i kolonner */
-  .footer .col ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Styling for listeelementer i kolonner */
-  .footer .col ul li {
-    color: #BC012C;
-    font-size: 14px;
-    font-family: inherit;
-    font-weight: normal;
-    padding: 5px 0px;
-    cursor: pointer;
-    transition: .2s;
-  }
-  
-  /* Specifik styling for sociale ikoner */
-  .social ul li {
-    display: inline-block;
-    padding-right: 10px !important;
-  }
-  
-  /* Hover-effekt for listeelementer */
-  .footer .col ul li:hover {
-    color: #fff;
-    transition: .1s;
-  }
-  
-  /* Styling for ikoner i sociale medier */
-  .social ul li i {
-    font-size: 27px;
-    color: #BC012C;
-  }
-  
-  /* Styling for nyhedsbrevets formular */
-  .newsletter form {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centrerer inputfelt og knap */
-  }
-  
-  /* Styling for email inputfelt */
-  .newsletter input[type="email"] {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 5px;
-    text-align: center; /* Centrerer tekst i inputfelt */
-  }
-  
-  /* Styling for knappen i nyhedsbrevets formular */
-  .newsletter button {
-    padding: 10px;
-    background-color: #BC012C;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  /* Hover-effekt for knappen */
-  .newsletter button:hover {
-    background-color: #BC012C;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  padding: 20px 0;
+}
+
+/* Styling for kolonnerne i footeren */
+.footer .col {
+  flex: 1 1 190px;
+  max-width: 190px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+  text-align: center;
+}
+
+/* Styling for kolonneoverskrifter */
+.footer .col h2 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: #BC012C;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+
+/* Styling for lister i kolonner */
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for listeelementer i kolonner */
+.footer .col ul li {
+  color: #BC012C;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: normal;
+  padding: 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+/* Specifik styling for sociale ikoner */
+.social ul li {
+  display: inline-block;
+  padding-right: 10px !important;
+}
+
+/* Hover-effekt for listeelementer */
+.footer .col ul li:hover {
+  color: #fff;
+  transition: .1s;
+}
+
+/* Styling for ikoner i sociale medier */
+.social ul li i {
+  font-size: 27px;
+  color: #BC012C;
+}
+
+/* Styling for nyhedsbrevets formular */
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for email inputfelt */
+.newsletter input[type="email"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Styling for knappen i nyhedsbrevets formular */
+.newsletter button {
+  padding: 10px;
+  background-color: #BC012C;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover-effekt for knappen */
+.newsletter button:hover {
+  background-color: #BC012C;
+}

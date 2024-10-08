@@ -1,51 +1,58 @@
-
+/* CSS-stilarter til layout og design */
 header {
-    margin-bottom: 40px; /* Tilføjer afstand mellem header og næste element */
-    text-align: center; /* Centerer teksten i header */
-}
+    margin-bottom: 40px; 
+    text-align: center; 
+} /* Stilarter til header */
 
+/* Stilarter til main container */
 main {
     display: flex;
     flex-direction: column; 
     align-items: center; 
-    gap: 80px; /* Øget afstand mellem sektioner */
-    margin: 0 auto; /* Centrerer main containeren */
+    gap: 80px; 
+    margin: 0 auto; 
 }
 
+/* Stilarter til sektionerne: Vegetarisk, Familiefavoritter, Hurtig */
 section #vegetaisk #familiefavoritter #hurtig {
     width: 100%; 
-    max-width: 700px; /* Øget maksimal bredde */
-    padding: 30px; /* Øget polstring */
-    margin: 15px auto; /* Centrerer sektionerne med mere margin */
-    border-radius: 8px; /* Rundede hjørner */
+    max-width: 700px; 
+    padding: 30px; 
+    margin: 15px auto; 
+    border-radius: 8px; 
     background-color: #BC012C; 
 }
 
+/* Stilarter til overskrifter (h2) */
 h2 {
     text-align: center;
-    margin-bottom: 20px; /* Øget afstand nedenfor overskriften */
-    font-size: 1.8em; /* Øget skrifttype størrelse */
+    margin-bottom: 20px; 
+    font-size: 1.8em; 
 }
 
+/* Stilarter til aside-elementer i sektionerne */
 section aside {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centrerer indholdet i aside */
-    margin: 10px 0; /* Øget margin mellem aside-elementer */
-    font-size: 1.2em; /* Øget skrifttype størrelse for indhold i aside */
+    justify-content: center; 
+    margin: 10px 0; 
+    font-size: 1.2em; 
 }
 
+/* Stilarter til labels i aside */
 aside label {
-    margin-right: 15px; /* Øget afstand til label */
+    margin-right: 15px; 
 }
 
+/* Stilarter til input og knapper i aside */
 aside input,
 aside button {
-    margin-left: 15px; /* Øget afstand til input og knapper */
-    padding: 10px; /* Øget polstring til input */
-    font-size: 1em; /* Øget skrifttype størrelse for input */
+    margin-left: 15px; 
+    padding: 10px; 
+    font-size: 1em; 
 }
 
+/* Stilarter til checkout-container */
 .checkout-container {
     display: flex;
     flex-direction: column; 
@@ -54,31 +61,31 @@ aside button {
     width: 100%;
     max-width: 700px;
     margin-top: 30px;
-    margin-bottom: 60px; /* Tilføj afstand under checkout-sektionen */
+    margin-bottom: 60px; 
     font-size: 1.2em;
 }
 
-/* Gør madbilleder responsive */
+/* Stilarter til madbilleder */
 .food-image {
     max-width: 100%; 
     height: auto; 
-    max-height: 250px; /* Øget maksimal højde for billeder */
-    border-radius: 8px; /* Tilføj rundede hjørner */
-    margin-bottom: 20px; /* Øget afstand nedenfor billedet */
+    max-height: 250px; 
+    border-radius: 8px; 
+    margin-bottom: 20px; 
 }
 
-/* Stilarter for knapper */
+/* Stilarter til knapper */
 button {
-    padding: 15px 20px; /* Øget polstring for knapper */
+    padding: 15px 20px; 
     border: none; 
     background-color: #000; 
-    color: white; /* Hvid tekstfarve */
-    border-radius: 5px; /* Rundede kanter */
-    cursor: pointer; /* Ændrer cursor til pointer ved hover */
-    font-size: 1.2em; /* Øget skrifttype størrelse for knapper */
+    color: white; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 1.2em; 
 }
 
+/* Stilarter til knapper ved hover */
 button:hover {
     background-color: #45a049; 
 }
-

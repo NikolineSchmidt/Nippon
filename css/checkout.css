@@ -7,13 +7,14 @@ header {
     padding: 20px;
 }
 
+/* Styling for header-titel */
 header h1 {
     font-size: 3.5rem;
     font-family: 'Arial', sans-serif;
     color: #000; 
 }
 
-/* Main container styling */
+/* Styling for hovedcontainer */
 main {
     display: flex;
     flex-direction: column;
@@ -21,6 +22,7 @@ main {
     padding: 20px;
 }
 
+/* Styling for kurv tabel og knapper */
 section #cartTable #totalSum #placeOrderButton  {
     width: 100%;
     max-width: 600px;
@@ -31,19 +33,21 @@ section #cartTable #totalSum #placeOrderButton  {
     color: #000; 
 }
 
+/* Styling for sektion overskrifter */
 section h2, section h3 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 15px;
 }
 
-/* Styling for the cart table */
+/* Styling for kurv tabel */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 15px;
 }
 
+/* Styling for tabeloverskrifter */
 thead th {
     font-size: 1.6rem;
     font-family: 'Arial', sans-serif;
@@ -53,6 +57,7 @@ thead th {
     border-bottom: 1px solid #000;
 }
 
+/* Styling for tabelindhold */
 tbody td {
     font-family: 'Arial', sans-serif;
     font-size: 1.4rem;
@@ -61,7 +66,7 @@ tbody td {
     color: #000;
 }
 
-/* Styling for the place order button */
+/* Styling for knappen til at afgive ordre */
 button#placeOrderButton {
     width: 100%;
     padding: 12px;
@@ -73,7 +78,7 @@ button#placeOrderButton {
     cursor: pointer;
 }
 
+/* Hover effekt for knappen til at afgive ordre */
 button#placeOrderButton:hover {
     background-color: #45a049; /* Mørkere grøn ved hover */
 }
-

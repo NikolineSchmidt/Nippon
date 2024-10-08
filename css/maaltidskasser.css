@@ -1,53 +1,53 @@
 /* Styling for billedrækken */
 .image-row {
-    display: flex; /* Gør det muligt at placere elementer i en fleksibel række */
-    justify-content: space-around; /* Fordeler billederne jævnt i rækken */
-    margin: 20px 0; /* Tilføjer margin over og under billedrækken */
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
 }
 
 /* Styling for hver måltidskasse */
 .image-container {
-    display: flex; /* Gør det muligt at placere indholdet i en fleksibel kolonne */
-    flex-direction: column; /* Arrangerer indholdet i en kolonne */
-    align-items: center; /* Centrerer indholdet horisontalt */
-    width: 350px; /* Øger bredden på hver måltidskasse */
-    margin: 10px; /* Margin omkring hver container */
-    text-align: center; /* Centrerer teksten under hvert billede */
-    height: 400px; /* Sætter en fast højde for at sikre ensartethed */
-    justify-content: space-between; /* Fordeler indholdet jævnt i containeren */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    margin: 10px;
+    text-align: center;
+    height: 400px;
+    justify-content: space-between;
 }
 
 .image-container img {
-    width: 100%; /* Gør billederne responsive og tilpasser sig containerens bredde */
-    height: 250px; /* Øger højden på billederne */
-    object-fit: cover; /* Sikrer, at billedet dækker hele containeren uden at ændre aspektforholdet */
-    border-radius: 10px; /* Rundede kanter på billederne */
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .image-container h3 {
-    margin: 10px 0 5px 0; /* Margin omkring overskriften */
-    font-size: 20px; /* Størrelse på overskriften */
+    margin: 10px 0 5px 0;
+    font-size: 20px;
 }
 
 .image-container p {
-    font-size: 16px; /* Størrelse på beskrivelsen */
-    color: #fff; /* Farve på teksten */
-    margin-bottom: 20px; /* Margin under beskrivelsen for ekstra plads til knappen */
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
 /* Justering af knapperne for at sikre, at de er på linje */
 .cta-button {
-    display: flex; /* Gør knappen til et fleksibelt element */
-    justify-content: center; /* Centrerer indholdet i knappen */
-    align-items: center; /* Centrerer indholdet vertikalt */
-    padding: 10px 20px; /* Indvendig afstand omkring knappen */
-    background-color: black; /* Baggrundsfarve på knappen */
-    color: white; /* Tekstfarve på knappen */
-    text-decoration: none; /* Fjerner understregning fra links */
-    border-radius: 5px; /* Rundede kanter på knappen */
-    font-size: 16px; /* Størrelse på teksten på knappen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 .cta-button:hover {
-    background-color: #45a049; /* Ændrer baggrundsfarven, når musen er over knappen */
+    background-color: #45a049;
 }
