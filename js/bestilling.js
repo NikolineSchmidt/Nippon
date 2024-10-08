@@ -1,14 +1,13 @@
 "use strict";
 
 let cart = {
-    vegetarisk: { quantity: 0, price: 60, total: 0 },
-    familiefavoritter: { quantity: 0, price: 70, total: 0 },
+    vegetarisk: { quantity: 0, price: 50, total: 0 }, // 50 kr. pr. person pr. dag
+    familiefavoritter: { quantity: 0, price: 50, total: 0 },
     hurtig: { quantity: 0, price: 50, total: 0 }
 };
 
 function goToCheckout() {
-    // Gå til checkout.html
-    window.location.href = 'checkout.html'; // Sørg for, at stien er korrekt
+    window.location.href = 'checkout.html';
 }
 
 function saveCartToLocalStorage() {
@@ -39,9 +38,9 @@ function addToCart(product) {
     const retter = parseInt(retterInput.value, 10);
 
     if (!isNaN(personer) && !isNaN(retter) && personer > 0 && retter > 0) {
-        cart[product].quantity += personer; // Tilføj antal personer til kurven
-        updateTotalPrice(product); // Opdater den samlede pris for dette produkt
-        saveCartToLocalStorage(); // Gem kurven
+        cart[product].quantity += personer;
+        updateTotalPrice(product);
+        saveCartToLocalStorage();
     } else {
         alert("Indtast et gyldigt antal personer og retter.");
     }
@@ -50,12 +49,12 @@ function addToCart(product) {
 function updateTotalPrice(product) {
     cart[product].total = cart[product].quantity * cart[product].price;
     document.getElementById(product + "-total").value = cart[product].total;
-    totalPrice(); // Opdater den totale pris
+    totalPrice();
 }
 
 function totalPrice() {
     const totalSum = Object.values(cart).reduce((sum, item) => sum + item.total, 0);
-    document.getElementById("totalSum").value = totalSum; // Opdater total pris i oversigten
+    document.getElementById("totalSum").value = totalSum;
 }
 
 function resetCart() {
@@ -63,10 +62,23 @@ function resetCart() {
         cart[product].quantity = 0;
         cart[product].total = 0;
         document.getElementById(product + "-total").value = 0;
-        document.getElementById(product + "-personer").value = 1; // Sæt standard værdi tilbage
+        document.getElementById(product + "-personer").value = 1;
     }
-    totalPrice(); // Opdater total pris
-    saveCartToLocalStorage(); // Gem den nulstillede kurv
+    totalPrice();
+    saveCartToLocalStorage();
 }
 
-window.onload = loadCartFromLocalStorage; // Indlæs kurven fra lokal opbevaring, når siden indlæses
+function scrollToSection() {
+    const hash = window.location.hash;
+    if (hash) {
+        const section = document.querySelector(hash);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+}
+
+window.onload = function() {
+    loadCartFromLocalStorage();
+    scrollToSection();
+};

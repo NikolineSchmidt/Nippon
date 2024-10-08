@@ -7,8 +7,56 @@
     <script src="js/checkout.js" defer></script>
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="https://kit.fontawesome.com/66261e5300.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navbar-top">
+            <div class="navbar-logo">
+                <a href="index.html"><img src="img/nippon.logo.webp" alt="Nippon Logo"></a>
+            </div>
+            <div class="navbar-search">
+                <input type="text" placeholder="Søg efter pasta... ">
+                <button type="submit">Søg</button>
+            </div>
+            <div class="navbar-icons">
+                <a href="#">BLIV KUNDE/ LOG IN</a>
+                <a href="#"><img src="img/shopping.cart.webp" alt="Kurv"></a>
+            </div>
+        </div>
+        <div class="navbar-bottom">
+            <ul class="navbar-menu">
+                <li><a href="maaltidskasser.html">MÅLTIDSKASSER</a></li>
+                <li>
+                    <a href="#">OPSKRIFTER</a>
+                    <ul class="submenu">
+                        <li><a href="#">FORETTER</a></li>
+                        <li><a href="#">HOVEDRETTER</a></li>
+                        <li><a href="#">DESSERTER</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">UGENS MENU</a></li>
+                <li>
+                    <a href="#">OM NIPPON</a>
+                    <ul class="submenu">
+                        <li><a href="#vision-mission">VORES VISSION & MISSION</a></li>
+                        <li><a href="#">SÅDAN FUNGERE DET</a></li>
+                        <li><a href="#sustainability">BÆREDYGTIGHED</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">KONTAKT OS</a>
+                    <ul class="submenu">
+                        <li><a href="#">KUNDESERVICE</a></li>
+                        <li><a href="#">OFTE STILLEDE SPØRGSMÅL</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <header>
         <h1>Checkout</h1>
     </header>
@@ -35,5 +83,7 @@
             <button id="placeOrderButton">Afgiv Ordre</button>
         </section>
     </main>
+
+   
 </body>
 </html>
