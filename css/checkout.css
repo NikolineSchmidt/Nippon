@@ -21,7 +21,7 @@ main {
     padding: 20px;
 }
 
-section {
+section #cartTable #totalSum #placeOrderButton  {
     width: 100%;
     max-width: 600px;
     padding: 20px;
