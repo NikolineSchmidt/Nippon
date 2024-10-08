@@ -1,0 +1,79 @@
+/* Header styling */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BC012C; 
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-family: 'Arial', sans-serif;
+    color: #000; 
+}
+
+/* Main container styling */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background-color: #BC012C; 
+    color: #000; 
+}
+
+section h2, section h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Styling for the cart table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+thead th {
+    font-size: 1.6rem;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+    padding: 10px;
+    color: #000; 
+    border-bottom: 1px solid #000;
+}
+
+tbody td {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.4rem;
+    padding: 8px;
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+
+/* Styling for the place order button */
+button#placeOrderButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#placeOrderButton:hover {
+    background-color: #45a049; /* Mørkere grøn ved hover */
+}
+
