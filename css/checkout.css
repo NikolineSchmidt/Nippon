@@ -39,7 +39,6 @@ table {
 /* Styling for tabeloverskrifter */
 thead th {
     font-size: 1.6rem;
-    font-family: 'Arial', sans-serif;
     text-align: left;
     padding: 10px;
     color: #000; 
@@ -48,7 +47,6 @@ thead th {
 
 /* Styling for tabelindhold */
 tbody td {
-    font-family: 'Arial', sans-serif;
     font-size: 1.4rem;
     padding: 8px;
     border-bottom: 1px solid #000;
