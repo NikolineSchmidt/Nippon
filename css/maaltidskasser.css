@@ -5,6 +5,11 @@
     margin: 20px 0;
 }
 
+main {
+    margin: 50px;
+    margin-bottom: 150px;
+}
+
 /* Styling for hver måltidskasse */
 .image-container {
     display: flex;
@@ -31,7 +36,7 @@
 
 .image-container p {
     font-size: 16px;
-    color: #fff;
+    color: #FFD7EF;
     margin-bottom: 20px;
 }
 
@@ -42,7 +47,7 @@
     align-items: center;
     padding: 10px 20px;
     background-color: black;
-    color: white;
+    color: #FFD7EF;
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;

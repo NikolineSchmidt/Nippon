@@ -48,7 +48,7 @@
     padding: 10px 15px;
     font-size: 16px;
     margin-left: 10px;
-    background-color: #fff;
+    background-color: #FFD7EF;
     color: #000;
     border: none;
     border-radius: 5px;
@@ -57,7 +57,7 @@
 }
 
 .navbar-search button:hover {
-    background-color: #fff;
+    background-color: #FFD7EF;
     color: #000;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .navbar-icons a:hover {
-    color: #fff; 
+    color: #FFD7EF; 
 }
 
 .navbar-icons img {
@@ -117,7 +117,7 @@
 }
 
 .navbar-menu a:hover {
-    color: #fff;
+    color: #FFD7EF;
 }
 
 /* Styling af submenu */
@@ -144,7 +144,7 @@
 }
 
 .submenu li a:hover {
-    color: #fff;
+    color: #FFD7EF;
 }
 
 /* Hover-effekt for at holde submenuen synlig */

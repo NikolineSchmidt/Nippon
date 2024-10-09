@@ -25,7 +25,7 @@ img[alt="maskot"] {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
-    color: #fff;
+    color: #FFD7EF;
     background-color: #000; 
     text-decoration: none;
     border-radius: 5px;
@@ -49,14 +49,14 @@ button.tilbage {
     color: #000;
     padding: 10px 20px;
     margin: 20px 400px;
-    color: #fff;
+    color: #FFD7EF;
 }
 
 /* Styling for bestilling */
 .bestilling {
     display: flex;
     justify-content: center;
-    color: #000;
+    color: #FFD7EF;
     margin: 30px;
 }
 
