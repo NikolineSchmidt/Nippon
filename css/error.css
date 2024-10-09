@@ -1,61 +1,120 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .content-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    background-color: #BC012C;
-  }
-  
-  .section-image {
-    max-width: 300px;
-    margin-right: 20px;
-    font-weight: 9000;
-  }
-  
-  .section-text {
-    max-width: 100%;
-    display: inline-block;
-    margin-bottom: 20px;
-  }
-  
-  
-  .section-text p {
-    font-size: 16px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
-  .btn {
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: green;
-    color: white;
-    border-radius: 5px;
-    font-size: 16px;
-    display: inline-block;
-    margin-left: 250px;
-    text-align: center;
-  }
-  
-  .btn:hover {
-    background-color: green;
-  }
-  
-  #jumpingImage {
-    display: block;
-    margin: 0 auto;
-    cursor: pointer;  /* Makes it clear the image is clickable */
-    pointer-events: auto;  /* Ensures that it can be clicked */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;  /* Sørger for, at body altid strækker sig til fuld højde */
+}
+
+.content-section {
+  flex: 1;  /* Dette gør, at indholdet af sektionen tager den resterende plads */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: #BC012C;
+}
+
+
+.section-text {
+  max-width: 100%;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.section-text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #FFD7EF;
+  border-radius: 5px;
+  font-size: 16px;
+  display: inline-block;
+  margin-left: 250px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: green;
+}
+
+#jumpingImage {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;  /* Makes it clear the image is clickable */
+  pointer-events: auto;  /* Ensures that it can be clicked */
+}
+
+footer.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+footer .col {
+  margin-bottom: 20px;
+}
+
+footer .col ul {
+  list-style-type: none;
+}
+
+footer .newsletter input[type="email"] {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+footer .newsletter button {
+  padding: 10px 20px;
+  background-color: #BC012C;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer .newsletter button:hover {
+  background-color: #FFD7EF;
+}
+
+footer .social ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+footer .social ul li {
+  font-size: 24px;
+}
+
+footer .social ul li i {
+  color: #BC012C;
+  cursor: pointer;
+}
+
+footer .social ul li i:hover {
+  color: #FFD7EF;
 }
