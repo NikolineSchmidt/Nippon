@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #BC012C;
+  }
+  
+  .section-image {
+    max-width: 300px;
+    margin-right: 20px;
+    font-weight: 9000;
+  }
+  
+  .section-text {
+    max-width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  
+  .section-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 250px;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    background-color: green;
+  }
+  
+  #jumpingImage {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;  /* Makes it clear the image is clickable */
+    pointer-events: auto;  /* Ensures that it can be clicked */
+}
