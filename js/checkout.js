@@ -6,7 +6,7 @@ function loadCartFromLocalStorage() {
     if (storedCart) {
         return JSON.parse(storedCart);
     }
-    return null;  // Return null if there's no cart
+    return null;
 }
 
 // Display the cart data in the table
@@ -20,27 +20,24 @@ function displayCart(cart) {
             row.innerHTML = `
                 <td>${product.charAt(0).toUpperCase() + product.slice(1)}</td>
                 <td>${cart[product].quantity}</td>
-                <td>$${cart[product].price}</td>
-                <td>$${cart[product].total}</td>
+                <td>${cart[product].price} kr.</td>
+                <td>${cart[product].total} kr.</td>
             `;
             cartTableBody.appendChild(row);
             totalSum += cart[product].total;
         }
     }
 
-    document.getElementById('totalSum').textContent = totalSum;
+    // Display total sum without "kr." added here
+    document.getElementById('totalSum').textContent = totalSum; // Removed "kr." here
 }
 
 // Handle placing the order
 function placeOrder() {
-    // For now, we'll just simulate an order being placed
-    alert("Order placed successfully!");
+    alert("Ordre afgivet med succes!");
 
-    // Optionally clear the cart from localStorage
     localStorage.removeItem('cart');
-
-    // Redirect the user to a confirmation page or home page
-    window.location.href = "tak-for-din-ordre.html";  // You can create this page
+    window.location.href = "tak-for-din-ordre.html";
 }
 
 // Initialize the checkout page
@@ -49,12 +46,10 @@ function initCheckout() {
     if (cart) {
         displayCart(cart);
     } else {
-        alert("Your cart is empty.");
+        alert("Din kurv er tom.");
     }
 
-    // Set up the place order button
     document.getElementById('placeOrderButton').addEventListener('click', placeOrder);
 }
 
-// Run the init function when the page loads
 window.onload = initCheckout;

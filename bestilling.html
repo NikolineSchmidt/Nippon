@@ -6,16 +6,64 @@
     <title>Bestilling af måltidskasser</title>
     
     <script src="js/bestilling.js" defer></script>
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/bestilling.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="https://kit.fontawesome.com/66261e5300.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <header>
-        <h1>Bestilling af måltidskasser</h1>
-    </header>
+    <nav class="navbar">
+        <div class="navbar-top">
+            <div class="navbar-logo">
+                <a href="index.html"><img src="img/nippon.logo.webp" alt="Nippon Logo"></a>
+            </div>
+            <div class="navbar-search">
+                <input type="text" placeholder="Søg efter pasta... ">
+                <button type="submit">Søg</button>
+            </div>
+            <div class="navbar-icons">
+                <a href="#">BLIV KUNDE/ LOG IN</a>
+                <a href="#"><img src="img/shopping.cart.webp" alt="Kurv"></a>
+            </div>
+        </div>
+        <div class="navbar-bottom">
+            <ul class="navbar-menu">
+                <li><a href="maaltidskasser.html">MÅLTIDSKASSER</a></li>
+                <li>
+                    <a href="#">OPSKRIFTER</a>
+                    <ul class="submenu">
+                        <li><a href="#">FORETTER</a></li>
+                        <li><a href="#">HOVEDRETTER</a></li>
+                        <li><a href="#">DESSERTER</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">UGENS MENU</a></li>
+                <li>
+                    <a href="#">OM NIPPON</a>
+                    <ul class="submenu">
+                        <li><a href="#vision-mission">VORES VISSION & MISSION</a></li>
+                        <li><a href="#">SÅDAN FUNGERE DET</a></li>
+                        <li><a href="#sustainability">BÆREDYGTIGHED</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">KONTAKT OS</a>
+                    <ul class="submenu">
+                        <li><a href="#">KUNDESERVICE</a></li>
+                        <li><a href="#">OFTE STILLEDE SPØRGSMÅL</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <main>
-        <section>
+        <header>
+            <h1>Bestilling af måltidskasser</h1>
+        </header>
+        <!-- Vegetarisk Kasse -->
+        <section id="vegetarisk">
             <h2>Vegetarisk Kasse</h2>
             <aside>
                 <img src="img/vegetarkasse.webp" alt="Vegetarisk Kasse" class="food-image">
@@ -37,7 +85,8 @@
             </aside>
         </section>
 
-        <section>
+        <!-- Familiefavoritter Kasse -->
+        <section id="familiefavoritter">
             <h2>Familiefavoritter Kasse</h2>
             <aside>
                 <img src="img/familiekassen.webp" alt="Familiefavoritter Kasse" class="food-image">
@@ -59,7 +108,8 @@
             </aside>
         </section>
 
-        <section>
+        <!-- Hurtig Kasse -->
+        <section id="hurtig">
             <h2>Hurtig Kasse</h2>
             <aside>
                 <img src="img/hurtigkasse.webp" alt="Hurtig Kasse" class="food-image">
@@ -90,7 +140,6 @@
                 </aside>
             </section>
             <section>
-                <h2>Checkout</h2>
                 <aside>
                     <button id="checkoutButton" onclick="goToCheckout()">Gå til Checkout</button>
                 </aside>
@@ -100,5 +149,42 @@
             </aside>
         </div>
     </main>
+
+    <footer class="footer">
+        <section class="col">
+          <h2>Kontor</h2>
+          <ul>
+            <li>NIPPON MÅLTIDSKASSER ApS</li>
+            <li>Rømers vej 3D</li>
+            <li>8000, Aarhus C</li>
+          </ul>
+        </section>
+        <section class="col">
+          <h2>Information</h2>
+          <ul>
+            <li>10:00-15:00</li>
+            <li>+4511223344</li>
+            <li>info@nippon.dk</li>
+          </ul>
+        </section>
+        <section class="col newsletter">
+            <h2>Nyhedsbrev</h2>
+            <form action="#" method="post">
+              <input type="email" name="email" placeholder="Din email" required>
+              <button type="submit">Tilmeld</button>
+            </form>
+          </section>
+          <section class="col social">
+            <h2>Social</h2>
+            <ul>
+              <li><i class="fa-brands fa-square-instagram"></i></li>
+              <li><i class="fa-brands fa-square-facebook"></i></li>
+              <li><i class="fa-brands fa-square-youtube"></i></li>
+            </ul>
+          </section>
+        
+    </footer>
+
+
 </body>
 </html>

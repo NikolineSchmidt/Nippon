@@ -19,3 +19,24 @@
   html {
     scroll-behavior: smooth;
   }
+
+/* Gør body og html til flex-container */
+html, body {
+  height: 100%; 
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Gør at main tager al ledig plads */
+main {
+  flex: 1;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #000;
+  color: #BC012C;
+  padding: 20px 0;
+}

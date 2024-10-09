@@ -1,69 +1,91 @@
+/* CSS-stilarter til layout og design */
+header {
+    margin-bottom: 40px; 
+    text-align: center; 
+} /* Stilarter til header */
+
+/* Stilarter til main container */
 main {
     display: flex;
-    flex-direction: column; /* Stabel elementer vertikalt */
-    align-items: center; /* Center elementerne horisontalt */
-    gap: 20px; /* Tilføj plads mellem hver sektion */
+    flex-direction: column; 
+    align-items: center; 
+    gap: 30px; 
+    margin: 50px; 
 }
 
-section {
-    width: 100%; /* Sørg for at hver sektion tager hele bredden af forældre container */
-    max-width: 600px; /* Sæt en maks. bredde for bedre kontrol */
-    padding: 20px;
-    margin: 10px;
-    border: 1px solid #000; /* Tilføj en let kant rundt om sektionerne */
-    border-radius: 8px; /* Rundede hjørner */
-    background-color: #BC012C; /* Lys baggrundsfarve */
+/* Stilarter til sektionerne: Vegetarisk, Familiefavoritter, Hurtig */
+section #vegetaisk #familiefavoritter #hurtig {
+    width: 100%; 
+    max-width: 700px; 
+    padding: 30px; 
+    margin: 15px auto; 
+    border-radius: 8px; 
+    background-color: #BC012C; 
 }
 
+/* Stilarter til overskrifter (h2) */
 h2 {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px; 
+    font-size: 1.8em; 
 }
 
+/* Stilarter til aside-elementer i sektionerne */
 section aside {
     display: flex;
     align-items: center;
-    margin: 5px 0;
+    justify-content: center; 
+    margin: 10px 0; 
+    font-size: 1.2em; 
 }
 
+/* Stilarter til labels i aside */
 aside label {
-    margin-right: 10px;
+    margin-right: 15px; 
 }
 
+/* Stilarter til input og knapper i aside */
 aside input,
 aside button {
-    margin-left: 10px;
+    margin-left: 15px; 
+    padding: 10px; 
+    font-size: 1em; 
 }
 
-/* Flex container for checkout og total sum */
+/* Stilarter til checkout-container */
 .checkout-container {
     display: flex;
-    flex-direction: column; /* Stabel checkout-sektioner vertikalt */
+    flex-direction: column; 
     align-items: center;
-    width: 100%; /* Gør checkout-sektion fuld bredde */
-    max-width: 600px; /* Sæt en maks. bredde for ensartethed */
-    margin-top: 20px;
+    justify-content: center; 
+    width: 100%;
+    max-width: 700px;
+    margin-top: 30px;
+    margin-bottom: 60px; 
+    font-size: 1.2em;
 }
 
-/* Gør madbilleder responsive */
+/* Stilarter til madbilleder */
 .food-image {
-    max-width: 100%; /* Sørg for, at det ikke overskrider bredden af sin container */
-    height: auto; /* Bevar aspektforholdet */
-    max-height: 200px; /* Begræns den maksimale højde */
-    border-radius: 8px; /* Tilføj rundede hjørner */
-    margin-bottom: 15px; /* Tilføj afstand nedenfor billedet */
+    max-width: 100%; 
+    height: auto; 
+    max-height: 250px; 
+    border-radius: 8px; 
+    margin-bottom: 20px; 
 }
 
-/* Stilarter for knapper */
+/* Stilarter til knapper */
 button {
-    padding: 10px 15px; /* Indvendig afstand omkring knappen */
-    border: none; /* Ingen kant på knappen */
-    background-color: #4CAF50; /* Grøn baggrundsfarve */
-    color: white; /* Hvid tekstfarve */
-    border-radius: 5px; /* Rundede kanter */
-    cursor: pointer; /* Ændrer cursor til pointer ved hover */
+    padding: 15px 20px; 
+    border: none; 
+    background-color: #000; 
+    color: #FFD7EF; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 1.2em; 
 }
 
+/* Stilarter til knapper ved hover */
 button:hover {
-    background-color: #45a049; /* Mørkere grøn ved hover */
+    background-color: #45a049; 
 }

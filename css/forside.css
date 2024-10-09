@@ -28,13 +28,13 @@
 
 .intro-content h1 {
     font-size: 2em;
-    color: #fff;
+    color: #FFD7EF;
     margin-bottom: 40px;
 }
 
 .intro-content p {
     font-size: 1.2em;
-    color: #fff;
+    color: #FFD7EF;
     margin-bottom: 20px;
 }
 
@@ -42,7 +42,7 @@
     display: inline-block;
     padding: 10px 20px;
     background-color: #000;
-    color: white;
+    color: #FFD7EF;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
@@ -55,7 +55,7 @@
 /* Vision & Mission sektion */
 .vision-mission {
     text-align: center;
-    color: #fff;
+    color: #FFD7EF;
     padding: 40px 20px;
     max-width: 1100px;
     margin: 0 auto 60px auto;
@@ -90,13 +90,13 @@
 .vision-mission h2 {
     font-size: 2.2em;
     margin-bottom: 15px;
-    color: #fff;
+    color: #FFD7EF;
 }
 
 .vision-mission p {
     font-size: 1.2em;
     line-height: 1.6;
-    color: #fff;
+    color: #FFD7EF;
 }
 
 /* Bæredygtighed sektion */
@@ -110,19 +110,19 @@
 .sustainability-content {
     max-width: 800px;
     margin: 0 auto 20px auto;
-    color: #fff;
+    color: #FFD7EF;
 }
 
 .sustainability h3 {
     font-size: 2em;
     margin-bottom: 15px;
-    color: #fff;
+    color: #FFD7EF;
 }
 
 .sustainability p {
     font-size: 1.2em;
     line-height: 1.6;
-    color: #fff;
+    color: #FFD7EF;
 }
 
 .sustainability-image {

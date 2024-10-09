@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
-    <script src="js/checkout.js" defer></script>
+    <title>Måltidskasser hos Nippon</title>
     <link rel="stylesheet" href="css/basic.css">
-    <link rel="stylesheet" href="css/checkout.css">
-    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/maaltidskasser.css">
+    <script src="js/script.js" defer></script>
     <script src="https://kit.fontawesome.com/66261e5300.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
     <nav class="navbar">
@@ -57,31 +56,27 @@
             </ul>
         </div>
     </nav>
-    
     <main>
-        <header>
-            <h1>Checkout</h1>
-        </header>
-        <section>
-            <h2>Din Kurv</h2>
-            <table id="cartTable">
-                <thead>
-                    <tr>
-                        <th>Produkt</th>
-                        <th>Antal</th>
-                        <th>Pris</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                   
-                </tbody>
-            </table>
-            <h3>Total pris: <span id="totalSum">0</span> kr.</h3>
-        </section>
-
-        <section>
-            <button id="placeOrderButton">Afgiv Ordre</button>
+        <h1>MÅLTIDSKASSER</h1>
+        <section class="image-row">
+            <article class="image-container">
+                <img src="img/vegetarkasse.webp" alt="Vegetarisk Kasse">
+                <h3>Vegetarisk Kasse</h3>
+                <p>Udforsk smagen af grønne retter med vores Vegetariske Måltidskasse. Hver uge får du en række spændende retter baseret på friske, sæsonbetonede grøntsager. Perfekt til dig, der ønsker at reducere kødforbruget. Retterne er nemme at tilberede, og der er masser af variation i smag og tekstur.</p>
+                <a href="bestilling.html#vegetarisk" class="cta-button">Bestil Nu</a>
+            </article>
+            <article class="image-container">
+                <img src="img/familiekassen.webp" alt="Familiefavoritter Kasse">
+                <h3>Familiefavoritter Kasse</h3>
+                <p>Gør hverdagens madlavning nemmere med vores Familiefavoritter. Denne måltidskasse er fyldt med retter, som hele familien vil elske. Med en blanding af klassiske og nye smagsoplevelser sikrer vi, at både børn og voksne kan spise sig mætte med sunde og velsmagende måltider. Alle opskrifter er børnevenlige og hurtige at tilberede.</p>
+                <a href="bestilling.html#familiefavoritter" class="cta-button">Bestil Nu</a>
+            </article>
+            <article class="image-container">
+                <img src="img/hurtigkasse.webp" alt="Hurtig Kasse">
+                <h3>Hurtig Kasse</h3>
+                <p>Til dig med en travl hverdag har vi sammensat vores Hurtig Måltidskasse. Her får du enkle opskrifter, som kan være klar på under 30 minutter, uden at gå på kompromis med smag eller kvalitet. De nemme trin-for-trin instruktioner sørger for, at du får et lækkert og mættende måltid uden stress.</p>
+                <a href="bestilling.html#hurtig" class="cta-button">Bestil Nu</a>
+            </article>
         </section>
     </main>
 
@@ -119,7 +114,6 @@
           </section>
         
     </footer>
-
-   
+    
 </body>
 </html>
