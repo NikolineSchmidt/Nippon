@@ -2,18 +2,18 @@
 
 const image = document.getElementById("jumpingImage");
 
-    // Function to make the image jump
+    // en funktion som, lader 404-billedet hopper op, hvor efter 0,3s kommer tilbage til sin start position.
     function makeImageJump() {
         image.style.transition = "transform 0.3s ease";
-        image.style.transform = "translateY(-50px)";  // Move the image upwards
+        image.style.transform = "translateY(-50px)";  
 
-        // Return the image to its original position after the jump
+        
         setTimeout(() => {
             image.style.transform = "translateY(0)";
-        }, 300); // The time here should match the transition duration (0.3s)
+        }, 300);
     }
 
-    // Add a click event listener to the image
+    // Window.onload som gør at når man enten klikker eller holder musen over gør at man får billedet til at hoppen.
     window.onload=function(){
         image.addEventListener("click", makeImageJump);
       }

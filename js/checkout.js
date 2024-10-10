@@ -1,6 +1,6 @@
 "use strict";
 
-// Load the cart from localStorage
+//en funktion som loader, indholder af kurven, som den får fra localStorage vha. JSON.parse som bruges til at bytte info fra websted til websted, og gør dataen til et JS objekt.
 function loadCartFromLocalStorage() {
     const storedCart = localStorage.getItem('cart');
     if (storedCart) {
@@ -9,7 +9,7 @@ function loadCartFromLocalStorage() {
     return null;
 }
 
-// Display the cart data in the table
+// en funktion der viser indholdet af inkøbs kurven i en tabel, vha. if, altså vis produktet i kurven er større end 0, viser den antal, pris og den totale pris i kroner
 function displayCart(cart) {
     const cartTableBody = document.querySelector('#cartTable tbody');
     let totalSum = 0;
@@ -28,11 +28,11 @@ function displayCart(cart) {
         }
     }
 
-    // Display total sum without "kr." added here
-    document.getElementById('totalSum').textContent = totalSum; // Removed "kr." here
+    //det her viser bare den totale sum for de vare man vil købe
+    document.getElementById('totalSum').textContent = totalSum; 
 }
 
-// Handle placing the order
+// en funktion som giver en alert efter man har trykket placer ordre, og derefter sender dig videre til "tak.for.din.order.html"
 function placeOrder() {
     alert("Ordre afgivet med succes!");
 
@@ -40,7 +40,7 @@ function placeOrder() {
     window.location.href = "tak-for-din-ordre.html";
 }
 
-// Initialize the checkout page
+// en funktion bestående af const, if og else, den tager info fra loadCartFromLocalStorage, og giver en alert hvis kurven er tom, hvis den ikke er tom, viser den hvad man har i kurven.
 function initCheckout() {
     const cart = loadCartFromLocalStorage();
     if (cart) {
